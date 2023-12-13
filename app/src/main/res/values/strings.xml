@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Fit Pat App</string>
+    <string name="welcome_to_fit_pat">Welcome to Fit Pat</string>
+    <string name="hi_there">Hi! There..</string>
+    <string name="you_looking">You Looking</string>
+    <string name="excercise_for">Excercise for</string>
+    <string name="high_blood_pressure">High Blood Pressure</string>
+    <string name="obesity">Obesity</string>
+    <string name="stress">Stress</string>
+    <string name="diabetes">Diabetes</string>
+    <string name="back_pain">Back Pain</string>
+    <string name="todo">TODO</string>
+    <string name="find_your">Find your</string>
+    <string name="activity">activity</string>
+    <string name="workout">Workout</string>
+    <string name="pose_1">Pose 1</string>
+    <string name="repeat_2_times">Repeat 2 times</string>
+    <string name="_0_1_00_min">0.1.00 MIN</string>
+    <string name="pos">pos</string>
+    <string name="quadruped_arm_leg_raise">Quadruped arm/leg raise</string>
+    <string name="_00_10_00_min">00.10.00 MIN</string>
+    <string name="time">00.10.00 MIN</string>
+    <string name="cat_and_camel">Cat and Camel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_route_tracker">RouteTrackerActivity</string>
+    <string name="forget_password">Forgot Password</string>
+    <string name="have_account">I have an Account</string>
+</resources>

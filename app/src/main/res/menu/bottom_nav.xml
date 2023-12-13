@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+
+        android:id="@+id/dashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/baseline_dashboard_24" />
+
+    <item
+
+        android:id="@+id/bmi"
+        android:title="BMI"
+        android:icon="@drawable/baseline_monitor_heart_24" />
+    <item
+        android:id="@+id/step"
+        android:title="Step Counter"
+        android:icon="@drawable/baseline_directions_walk_24" />
+    <item
+        android:id="@+id/location"
+        android:title="Location"
+        android:icon="@drawable/baseline_location_on_24" />
+
+</menu>

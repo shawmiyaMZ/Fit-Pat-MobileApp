@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BackPain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/excersice_dashbord_shape"
+        android:orientation="horizontal"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/small"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_light"
+            android:layout_marginLeft="50dp"
+            android:text="Find your "
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Activity"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="160dp"
+            android:layout_marginBottom="30dp">
+
+
+
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="20dp"
+                android:columnCount="1"
+                android:columnOrderPreserved="false"
+                android:rowCount="4">
+
+                <!-- Do yoga  button-->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/img1"
+                    android:layout_width="340dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    app:cardBackgroundColor="#ffff"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="5dp">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                app:lottie_autoPlay="true"
+                                android:background="@color/white"
+                                app:lottie_rawRes="@raw/stetches"
+                                android:layout_marginBottom="10dp"
+                                app:lottie_cacheComposition="true"
+                                app:lottie_loop="true"
+                                app:lottie_speed="1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="50dp"
+                                android:text=" stretches for lower back pain that can help you get out of pain."
+                                android:textAlignment="center"
+                                android:textColor="#4C4B4B"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/stretch_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="61dp"
+                        android:layout_marginTop="245dp"
+                        android:backgroundTint="#3F7AFD"
+                        android:textSize="11sp"
+                        android:text="Do Stretches"
+                        android:textColor="@color/white"
+                        app:cornerRadius="20dp" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- use step counter  button-->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/walk"
+                    android:layout_width="340dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    app:cardBackgroundColor="#ffff"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="5dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/walk_anime"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                app:lottie_autoPlay="true"
+                                android:background="@color/white"
+                                app:lottie_rawRes="@raw/walkin_hbp"
+                                android:layout_marginBottom="10dp"
+                                app:lottie_cacheComposition="true"
+                                app:lottie_loop="true"
+                                app:lottie_speed="1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="50dp"
+                                android:text="Ten minutes of brisk or moderate walking will lower the blood pressure"
+                                android:textAlignment="center"
+                                android:textColor="#4C4B4B"
+                                android:textSize="10sp"
+                                android:textStyle="bold"
+                                />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/walk_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="61dp"
+                        android:layout_marginTop="245dp"
+                        android:textSize="11sp"
+                        android:backgroundTint="#3F7AFD"
+                        android:text="Use Step Counter"
+                        android:textColor="@color/white"
+                        app:cornerRadius="20dp"
+                        />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- Skipping  button-->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/skipping"
+                    android:layout_width="340dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="7dp"
+                    app:cardBackgroundColor="#ffff"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="5dp">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                app:lottie_autoPlay="true"
+                                android:background="@color/white"
+                                app:lottie_rawRes="@raw/skipping_hbp"
+                                android:layout_marginBottom="10dp"
+                                app:lottie_cacheComposition="true"
+                                app:lottie_loop="true"
+                                app:lottie_speed="1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="50dp"
+                                android:text="Cardiovascular, or aerobic, exercise can help lower your blood pressure and make your heart stronger"
+                                android:textAlignment="center"
+                                android:textColor="#4C4B4B"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/Skipping_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="61dp"
+                        android:layout_marginTop="245dp"
+                        android:backgroundTint="#3F7AFD"
+                        android:textSize="11sp"
+                        android:text="Skipping Timer"
+                        android:textColor="@color/white"
+                        app:cornerRadius="20dp" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </GridLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <!-- Bottom Nav -->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_nav"
+        app:itemBackground="@color/white"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/bottom_nav"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
+
+

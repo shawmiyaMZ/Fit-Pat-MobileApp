@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/excersice_dashbord_shape"
+        android:orientation="horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_light"
+            android:text="Welcome to FIT PAT "
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_light"
+            android:textAlignment="center"
+            android:text="your fitness partner"
+            android:textColor="@color/white"
+            android:layout_marginTop="110dp"
+            android:textSize="10sp"
+            android:textStyle="italic"/>
+
+    <LinearLayout
+        android:id="@+id/small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="150dp"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:lottie_autoPlay="true"
+            android:layout_marginStart="50dp"
+            app:lottie_rawRes="@raw/hipicture"
+            app:lottie_cacheComposition="true"
+            app:lottie_loop="true"
+            app:lottie_speed="1" />
+
+        <TextView
+            android:id="@+id/greetingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" hi"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/poppins_light" />
+
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp">
+
+
+
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:rowCount="6"
+            >
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn1"
+                android:layout_width="175dp"
+                android:layout_height="250dp"
+                android:layout_margin="5dp"
+                android:layout_marginStart="10dp"
+                app:cardBackgroundColor="#ffff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cardtext1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/delius"
+                        android:text="@string/high_blood_pressure"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold"/>
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/todo"
+                        android:outlineProvider="none"
+                        android:src="@drawable/diabetes">
+
+                    </ImageView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn2"
+                android:layout_width="175dp"
+                android:layout_height="250dp"
+                android:layout_margin="5dp"
+                android:layout_marginStart="10dp"
+                app:cardBackgroundColor="#ffff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foregroundTint="#F44336"
+                    android:foregroundTintMode="multiply"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/delius"
+                        android:text="@string/back_pain"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:layout_width="175dp"
+                        android:layout_height="200dp"
+
+                        android:src="@drawable/backpain"
+                        >
+
+                    </ImageView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn3"
+                android:layout_width="175dp"
+                android:layout_height="250dp"
+                android:layout_margin="5dp"
+                android:layout_marginStart="10dp"
+                app:cardBackgroundColor="#ffff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/delius"
+                        android:text="@string/diabetes"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:layout_width="175dp"
+                        android:layout_height="220dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/diabete">
+
+                    </ImageView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn4"
+                android:layout_width="175dp"
+                android:layout_height="250dp"
+                android:layout_margin="5dp"
+                android:layout_marginStart="10dp"
+                app:cardBackgroundColor="#ffff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/delius"
+                        android:text="@string/obesity"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:layout_width="175dp"
+                        android:layout_height="220dp"
+                        android:src="@drawable/obesity">
+
+                    </ImageView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn5"
+                android:layout_width="175dp"
+                android:layout_height="250dp"
+                android:layout_margin="5dp"
+                android:layout_marginStart="10dp"
+                app:cardBackgroundColor="#ffff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/delius"
+                        android:text="Joint Pain"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:layout_width="175dp"
+                        android:layout_height="220dp"
+                        android:src="@drawable/jointpain">
+
+                    </ImageView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn6"
+                android:layout_width="175dp"
+                android:layout_height="250dp"
+                android:layout_margin="5dp"
+                android:layout_marginStart="10dp"
+                app:cardBackgroundColor="#ffff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/delius"
+                        android:text="@string/stress"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:layout_width="175dp"
+                        android:layout_height="220dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/stress">
+
+                    </ImageView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

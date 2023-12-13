@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:layout_marginTop="50dp"
+    android:textAlignment="center"
+    tools:context=".LoginActivity">
+
+   <!-- header text-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins"
+        android:text="Welcome Back!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textsmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Login to your existing account of FIT PAT"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_below="@+id/textView2"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_below="@+id/textsmall"
+        >
+        <ImageView
+            android:id="@+id/imagelog"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/loginpic"
+
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EditTextLayoutUserName"
+            style="@style/CustomTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/imagelog"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/baseline_person_24"
+            app:endIconMode="clear_text"
+            android:layout_marginTop="20dp"
+            android:hint="UserName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EditTextLayoutPassword"
+            style="@style/CustomTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/baseline_lock_24"
+            android:layout_below="@+id/EditTextLayoutUserName"
+            app:endIconMode="password_toggle"
+            android:hint="Password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Login button-->
+
+        <Button
+            android:id="@+id/btnsignin1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/EditTextLayoutPassword"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#3F7AFD"
+            android:text="Login"
+            app:cornerRadius="20dp" />
+
+        <!-- forget password text -->
+
+        <TextView
+            android:id="@+id/resetPassword"
+            android:layout_width="231dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/btnsignin1"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="6dp"
+            android:clickable="true"
+            android:text="forgetpassword"
+            android:textAlignment="center"
+            android:textColor="#4C4B4B"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+</RelativeLayout>

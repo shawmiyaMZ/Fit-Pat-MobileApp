@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context=".SignUp"
+    android:background="@drawable/backround_selector">
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:gravity="center"
+        android:padding="40dp">
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <!-- Input Text Fields -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/EditTextLayoutUserName"
+                style="@style/CustomTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:hint="UserName"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/baseline_person_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/EditTextLayoutPassword"
+                style="@style/CustomTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditTextLayoutUserName"
+                android:hint="Password"
+                app:startIconDrawable="@drawable/baseline_lock_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/EditTextLayoutrePassword"
+                style="@style/CustomTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditTextLayoutPassword"
+                android:hint="Re-Type Password"
+                app:startIconDrawable="@drawable/baseline_lock_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/repassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/RelativeLayout1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/poppins"
+            android:text="Tell us about userself to create a profile for you"
+            android:textAlignment="center"
+            android:textColor="#4C4B4B"
+            android:textSize="10sp"
+            android:textStyle="italic" />
+
+
+        <!-- Register button -->
+        <Button
+            android:id="@+id/btnsignup"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/RelativeLayout1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="#FF3F7AFD"
+            android:text="Register"
+            android:textColor="@color/white"
+            app:cornerRadius="50dp" />
+
+        <!-- I have an account text -->
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="231dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/btnsignup"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:text="I have an Account Login"
+            android:textAlignment="center"
+            android:textColor="#4C4B4B"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+
+
+
+    </RelativeLayout>
+
+    <!-- Male Button -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/femaleCard"
+        android:layout_marginTop="100dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="55dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="250dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="250dp">
+
+            <ImageView
+                android:id="@+id/female_image_view"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/female" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Female button -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardMale"
+        android:layout_width="130dp"
+        android:layout_marginTop="100dp"
+        android:layout_height="130dp"
+        android:layout_alignLeft="@+id/femaleCard"
+        android:layout_marginLeft="150dp"
+        app:cardBackgroundColor="@color/white"
+
+        app:cardCornerRadius="250dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="250dp">
+
+            <ImageView
+                android:id="@+id/male_image_view"
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/male" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
