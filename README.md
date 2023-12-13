@@ -26,4 +26,4 @@ FitPat is a mobile app built using Android Studio that aims to provide personali
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/FitPat-Mobile-App.git
+   git clone https://github.com/shawmiyaMZ/FitPat-Mobile-App.git
